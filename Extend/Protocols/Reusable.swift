@@ -6,7 +6,7 @@
 //  Copyright © 2020 Roman Derevianko. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 public protocol Reusable {
   static var reuseIdentifier: String { get }

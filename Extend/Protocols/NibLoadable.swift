@@ -15,7 +15,8 @@ public protocol NibLoadable: NibRepresentable {
 public extension NibLoadable where Self: UIView {
   @discardableResult
   func loadNib(_ nib: UINib) -> UIView? {
-    guard let view = nib.instantiate(withOwner: self, options: nil).first as? UIView else { return nil }
+    guard let view = nib.instantiate(withOwner: self, options: nil).first as? UIView
+    else { return nil }
     
     addSubview(view)
     
@@ -24,10 +25,10 @@ public extension NibLoadable where Self: UIView {
     view.frame = bounds
     
     NSLayoutConstraint.activate([
-      view.topAnchor.constraint(equalTo: topAnchor),
-      view.bottomAnchor.constraint(equalTo: bottomAnchor),
-      view.leadingAnchor.constraint(equalTo: leadingAnchor),
-      view.trailingAnchor.constraint(equalTo: trailingAnchor)
+      view.topAnchor.constraint(equalTo: topAnchor, constant: 0),
+      view.bottomAnchor.constraint(equalTo: bottomAnchor, constant: 0),
+      view.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 0),
+      view.trailingAnchor.constraint(equalTo: trailingAnchor, constant: 0)
     ])
     
     return view
@@ -37,7 +38,8 @@ public extension NibLoadable where Self: UIView {
 public extension NibLoadable where Self: UIViewController {
   @discardableResult
   func loadNib(_ nib: UINib) -> UIView? {
-    guard let view = nib.instantiate(withOwner: self, options: nil).first as? UIView else { return nil }
+    guard let view = nib.instantiate(withOwner: self, options: nil).first as? UIView
+    else { return nil }
     
     self.view = view
     return view
