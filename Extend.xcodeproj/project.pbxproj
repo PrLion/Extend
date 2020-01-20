@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1463333B23D65A26009B58D0 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1463333A23D65A26009B58D0 /* TextView.swift */; };
+		1463333E23D65A69009B58D0 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1463333D23D65A69009B58D0 /* TextField.swift */; };
 		14DA938A23C80E24009ABFD5 /* Extend.h in Headers */ = {isa = PBXBuildFile; fileRef = 14DA938823C80E24009ABFD5 /* Extend.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		14DA93D223CD3DA9009ABFD5 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DA93D123CD3DA9009ABFD5 /* Reusable.swift */; };
 		14DA93D823CD3E93009ABFD5 /* NSObject+ClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DA93D723CD3E93009ABFD5 /* NSObject+ClassName.swift */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1463333A23D65A26009B58D0 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
+		1463333D23D65A69009B58D0 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		14DA938523C80E24009ABFD5 /* Extend.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Extend.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		14DA938823C80E24009ABFD5 /* Extend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Extend.h; sourceTree = "<group>"; };
 		14DA938923C80E24009ABFD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -46,6 +50,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1463333823D659FD009B58D0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1463333C23D65A5E009B58D0 /* TextField */,
+				1463333923D65A1A009B58D0 /* TextView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1463333923D65A1A009B58D0 /* TextView */ = {
+			isa = PBXGroup;
+			children = (
+				1463333A23D65A26009B58D0 /* TextView.swift */,
+			);
+			path = TextView;
+			sourceTree = "<group>";
+		};
+		1463333C23D65A5E009B58D0 /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				1463333D23D65A69009B58D0 /* TextField.swift */,
+			);
+			path = TextField;
+			sourceTree = "<group>";
+		};
 		14DA937B23C80E24009ABFD5 = {
 			isa = PBXGroup;
 			children = (
@@ -67,6 +96,7 @@
 			children = (
 				14DA93D323CD3E36009ABFD5 /* Extensions */,
 				14DA93D023CD3D8D009ABFD5 /* Protocols */,
+				1463333823D659FD009B58D0 /* Views */,
 				14DA93CC23CD3CF2009ABFD5 /* Support Files */,
 			);
 			path = Extend;
@@ -213,9 +243,11 @@
 				14DA93D223CD3DA9009ABFD5 /* Reusable.swift in Sources */,
 				14DA93E423CD48D6009ABFD5 /* ClosureAction.swift in Sources */,
 				14DA93D823CD3E93009ABFD5 /* NSObject+ClassName.swift in Sources */,
+				1463333E23D65A69009B58D0 /* TextField.swift in Sources */,
 				14DA93DC23CD4434009ABFD5 /* NibRepresentable.swift in Sources */,
 				14DA93E023CD46EA009ABFD5 /* NibReusable.swift in Sources */,
 				14DA93DE23CD452E009ABFD5 /* NibLoadable.swift in Sources */,
+				1463333B23D65A26009B58D0 /* TextView.swift in Sources */,
 				14DA93DA23CD3EFE009ABFD5 /* String+Regex.swift in Sources */,
 				14DA93E223CD4854009ABFD5 /* Then.swift in Sources */,
 			);
