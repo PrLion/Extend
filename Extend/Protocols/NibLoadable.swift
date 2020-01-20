@@ -8,7 +8,7 @@
 
 import UIKit
 
-public protocol NibLoadable {
+public protocol NibLoadable: NibRepresentable {
   func loadNib(_ nib: UINib) -> UIView?
 }
 

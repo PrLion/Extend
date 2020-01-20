@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15705"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SeparatorView" customModule="Extend" customModuleProvider="target">
+            <connections>
+                <outlet property="bottomConstraint" destination="PXu-On-ndD" id="bw3-JO-93g"/>
+                <outlet property="heightConstraint" destination="Auj-d6-2it" id="Bid-pd-YrD"/>
+                <outlet property="leftConstraint" destination="c89-ML-5OK" id="pfO-vD-L56"/>
+                <outlet property="rightConstraint" destination="l9R-56-bLx" id="ywU-UK-t6J"/>
+                <outlet property="separator" destination="kDT-iG-IdW" id="eb7-5u-efL"/>
+                <outlet property="topConstraint" destination="FT1-dd-G4C" id="ZjO-UJ-cpk"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="aMg-ys-ghC">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="139"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kDT-iG-IdW">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="139"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="139" id="Auj-d6-2it"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="kDT-iG-IdW" firstAttribute="top" secondItem="aMg-ys-ghC" secondAttribute="top" id="FT1-dd-G4C"/>
+                <constraint firstAttribute="bottom" secondItem="kDT-iG-IdW" secondAttribute="bottom" id="PXu-On-ndD"/>
+                <constraint firstItem="kDT-iG-IdW" firstAttribute="leading" secondItem="aMg-ys-ghC" secondAttribute="leading" id="c89-ML-5OK"/>
+                <constraint firstAttribute="trailing" secondItem="kDT-iG-IdW" secondAttribute="trailing" id="l9R-56-bLx"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-32.8125" y="90.625"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CharacterView" customModule="Extend" customModuleProvider="target">
+            <connections>
+                <outlet property="characterLabel" destination="PP4-uD-rTo" id="9SX-aY-Ubv"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="U9T-RE-W8A">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="222"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PP4-uD-rTo">
+                    <rect key="frame" x="166.5" y="101" width="42" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="PP4-uD-rTo" secondAttribute="bottom" id="WF7-el-Rct"/>
+                <constraint firstItem="PP4-uD-rTo" firstAttribute="centerX" secondItem="U9T-RE-W8A" secondAttribute="centerX" id="bE4-3L-lmv"/>
+                <constraint firstItem="PP4-uD-rTo" firstAttribute="centerY" secondItem="U9T-RE-W8A" secondAttribute="centerY" id="daJ-Yc-EDh"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="PP4-uD-rTo" secondAttribute="trailing" id="hL6-AL-Du2"/>
+                <constraint firstItem="PP4-uD-rTo" firstAttribute="top" relation="greaterThanOrEqual" secondItem="U9T-RE-W8A" secondAttribute="top" id="rzN-sq-un7"/>
+                <constraint firstItem="PP4-uD-rTo" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="U9T-RE-W8A" secondAttribute="leading" id="uuB-Ca-Rbl"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="109.59999999999999" y="291.87192118226602"/>
+        </view>
+    </objects>
+</document>
