@@ -68,7 +68,8 @@ class CharacterView: NibView {
   override func viewDidInit() {
     super.viewDidInit()
     translatesAutoresizingMaskIntoConstraints = false
-    border(color: tintColor, width: 1 / UIScreen.main.scale, radius: 10)
+    border(color: tintColor, width: 1 / UIScreen.main.scale, radius: 5)
+    backgroundColor = .white
   }
   
   override func didMoveToWindow() {
