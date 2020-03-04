@@ -23,7 +23,6 @@ class CharacterView: NibView {
   override var tintColor: UIColor! {
     didSet {
       layer.borderColor = tintColor.cgColor
-      characterLabel.textColor = tintColor
     }
   }
   
@@ -53,6 +52,11 @@ class CharacterView: NibView {
   var text: String? {
     get { return characterLabel.text }
     set { characterLabel.text = newValue }
+  }
+  
+  var textColor: UIColor? {
+    get { return characterLabel.textColor }
+    set { characterLabel.textColor = newValue}
   }
   
   // MARK: - Lifecycle

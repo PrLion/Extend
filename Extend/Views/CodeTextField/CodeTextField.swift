@@ -44,6 +44,13 @@ open class CodeTextField: NibControl, UITextInputTraits {
     didSet { characterViews.forEach { $0.tintColor = tintColor } }
   }
   
+  open var focusedTintColor: UIColor = .black
+  open var emptyTintColor: UIColor = .black
+  
+  open var textColor: UIColor? {
+    didSet { characterViews.forEach { $0.textColor = textColor } }
+  }
+  
   public var font: UIFont! = .systemFont(ofSize: 17) {
     didSet { characterViews.forEach { $0.font = font } }
   }
@@ -57,6 +64,8 @@ open class CodeTextField: NibControl, UITextInputTraits {
         characterViews.enumerated().forEach {
           let character = text.count > $0.offset ? String(Array(text)[$0.offset]) : nil
           $0.element.text = character
+          
+          $0.element.tintColor = $0.element.text == nil ? emptyTintColor : focusedTintColor
         }
       default:
         characterViews.forEach { $0.text = nil }
