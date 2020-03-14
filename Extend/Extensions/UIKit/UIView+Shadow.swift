@@ -22,6 +22,14 @@ public struct Shadow {
     self.offset = offset
     self.path = path
   }
+  
+  public init(color: UIColor, x: Int, y: Int, blur: Int, spread: Int, cornerRadius: CGFloat? = nil, bounds: CGRect? = nil) {
+    self.color = color
+    self.radius = Float(blur)
+    self.opacity = Float(spread)
+    self.offset = CGPoint(x: x, y: y)
+    self.path = UIBezierPath(roundedRect: bounds ?? .zero, cornerRadius: cornerRadius ?? .zero).cgPath
+  }
 }
 
 public extension UIView {
