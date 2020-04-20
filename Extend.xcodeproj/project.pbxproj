@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		141EF6A1244E33A500B1CBD2 /* CountFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141EF6A0244E33A500B1CBD2 /* CountFormatter.swift */; };
 		1463333B23D65A26009B58D0 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1463333A23D65A26009B58D0 /* TextView.swift */; };
 		1463333E23D65A69009B58D0 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1463333D23D65A69009B58D0 /* TextField.swift */; };
 		1463334123D65DBA009B58D0 /* SeparatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1463334023D65DBA009B58D0 /* SeparatorView.swift */; };
@@ -58,6 +59,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		141EF6A0244E33A500B1CBD2 /* CountFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountFormatter.swift; sourceTree = "<group>"; };
 		1463333A23D65A26009B58D0 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 		1463333D23D65A69009B58D0 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		1463334023D65DBA009B58D0 /* SeparatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparatorView.swift; sourceTree = "<group>"; };
@@ -124,6 +126,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		141EF69F244E338A00B1CBD2 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				141EF6A0244E33A500B1CBD2 /* CountFormatter.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		1463333823D659FD009B58D0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -229,6 +239,7 @@
 			children = (
 				14DA93D323CD3E36009ABFD5 /* Extensions */,
 				14DA93D023CD3D8D009ABFD5 /* Protocols */,
+				141EF69F244E338A00B1CBD2 /* Helpers */,
 				1463333823D659FD009B58D0 /* Views */,
 				1463335A23D66080009B58D0 /* Controllers */,
 				14DA93CC23CD3CF2009ABFD5 /* Support Files */,
@@ -420,6 +431,7 @@
 				1463333E23D65A69009B58D0 /* TextField.swift in Sources */,
 				1463338123D662B7009B58D0 /* UIColor+Hex.swift in Sources */,
 				1463338823D662B8009B58D0 /* UITableView+Register.swift in Sources */,
+				141EF6A1244E33A500B1CBD2 /* CountFormatter.swift in Sources */,
 				1463334E23D65F37009B58D0 /* Gradient.swift in Sources */,
 				1463338223D662B8009B58D0 /* UIImage+Blur.swift in Sources */,
 				1463336B23D66235009B58D0 /* Data+Hash.swift in Sources */,
