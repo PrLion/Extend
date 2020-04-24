@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		141EF6A1244E33A500B1CBD2 /* CountFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141EF6A0244E33A500B1CBD2 /* CountFormatter.swift */; };
+		141EF6E22453A2D100B1CBD2 /* UITableView+Diff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141EF6DD2453A2D000B1CBD2 /* UITableView+Diff.swift */; };
+		141EF6E32453A2D100B1CBD2 /* Collection+Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141EF6DE2453A2D000B1CBD2 /* Collection+Section.swift */; };
+		141EF6E42453A2D100B1CBD2 /* Diff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141EF6DF2453A2D000B1CBD2 /* Diff.swift */; };
+		141EF6E52453A2D100B1CBD2 /* Collection+Diff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141EF6E02453A2D000B1CBD2 /* Collection+Diff.swift */; };
 		1463333B23D65A26009B58D0 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1463333A23D65A26009B58D0 /* TextView.swift */; };
 		1463333E23D65A69009B58D0 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1463333D23D65A69009B58D0 /* TextField.swift */; };
 		1463334123D65DBA009B58D0 /* SeparatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1463334023D65DBA009B58D0 /* SeparatorView.swift */; };
@@ -60,6 +64,10 @@
 
 /* Begin PBXFileReference section */
 		141EF6A0244E33A500B1CBD2 /* CountFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountFormatter.swift; sourceTree = "<group>"; };
+		141EF6DD2453A2D000B1CBD2 /* UITableView+Diff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Diff.swift"; sourceTree = "<group>"; };
+		141EF6DE2453A2D000B1CBD2 /* Collection+Section.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Collection+Section.swift"; sourceTree = "<group>"; };
+		141EF6DF2453A2D000B1CBD2 /* Diff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Diff.swift; sourceTree = "<group>"; };
+		141EF6E02453A2D000B1CBD2 /* Collection+Diff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Collection+Diff.swift"; sourceTree = "<group>"; };
 		1463333A23D65A26009B58D0 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 		1463333D23D65A69009B58D0 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		1463334023D65DBA009B58D0 /* SeparatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparatorView.swift; sourceTree = "<group>"; };
@@ -132,6 +140,24 @@
 				141EF6A0244E33A500B1CBD2 /* CountFormatter.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		141EF6DA2453A27E00B1CBD2 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		141EF6DB2453A2B100B1CBD2 /* Diff */ = {
+			isa = PBXGroup;
+			children = (
+				141EF6E02453A2D000B1CBD2 /* Collection+Diff.swift */,
+				141EF6DE2453A2D000B1CBD2 /* Collection+Section.swift */,
+				141EF6DF2453A2D000B1CBD2 /* Diff.swift */,
+				141EF6DD2453A2D000B1CBD2 /* UITableView+Diff.swift */,
+			);
+			path = Diff;
 			sourceTree = "<group>";
 		};
 		1463333823D659FD009B58D0 /* Views */ = {
@@ -237,6 +263,8 @@
 		14DA938723C80E24009ABFD5 /* Extend */ = {
 			isa = PBXGroup;
 			children = (
+				141EF6DB2453A2B100B1CBD2 /* Diff */,
+				141EF6DA2453A27E00B1CBD2 /* New Group */,
 				14DA93D323CD3E36009ABFD5 /* Extensions */,
 				14DA93D023CD3D8D009ABFD5 /* Protocols */,
 				141EF69F244E338A00B1CBD2 /* Helpers */,
@@ -436,6 +464,7 @@
 				1463338223D662B8009B58D0 /* UIImage+Blur.swift in Sources */,
 				1463336B23D66235009B58D0 /* Data+Hash.swift in Sources */,
 				1463335023D65F45009B58D0 /* GradientView.swift in Sources */,
+				141EF6E52453A2D100B1CBD2 /* Collection+Diff.swift in Sources */,
 				1463336923D66211009B58D0 /* CharacterSet+Sets.swift in Sources */,
 				1463338023D662B7009B58D0 /* UIView+Shadow.swift in Sources */,
 				1463338B23D662B8009B58D0 /* UICollectionView+Register.swift in Sources */,
@@ -443,9 +472,12 @@
 				14DA93E023CD46EA009ABFD5 /* NibReusable.swift in Sources */,
 				14DA93DE23CD452E009ABFD5 /* NibLoadable.swift in Sources */,
 				1463336D23D66251009B58D0 /* NSAttributedString+Attachment.swift in Sources */,
+				141EF6E32453A2D100B1CBD2 /* Collection+Section.swift in Sources */,
 				1463338423D662B8009B58D0 /* UIView+Round.swift in Sources */,
 				1463336523D661C9009B58D0 /* Array+Hex.swift in Sources */,
 				1463335C23D66096009B58D0 /* KeyboardController.swift in Sources */,
+				141EF6E42453A2D100B1CBD2 /* Diff.swift in Sources */,
+				141EF6E22453A2D100B1CBD2 /* UITableView+Diff.swift in Sources */,
 				1463334923D65F18009B58D0 /* GradientType.swift in Sources */,
 				1463338323D662B8009B58D0 /* UIImage+Resize.swift in Sources */,
 				1463338623D662B8009B58D0 /* UIImage+Color.swift in Sources */,
