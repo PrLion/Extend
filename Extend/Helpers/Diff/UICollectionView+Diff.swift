@@ -1,0 +1,46 @@
+//
+//  UICollectionView+Diff.swift
+//  Extend
+//
+//  Created by Roman Derevianko on 25.04.2020.
+//  Copyright © 2020 Roman Derevianko. All rights reserved.
+//
+
+import UIKit
+
+public extension UICollectionView {
+  func apply<Item>(diff: SectionDiff<Int, Item>) {
+    var insSections = [Int]()
+    var delSections = [Int]()
+    
+    var delItems = [IndexPath]()
+    var insItems = [IndexPath]()
+    
+    diff.removed.forEach { section in
+      if section.element.count == numberOfItems(inSection: section.index) {
+        delSections.append(section.index)
+      } else {
+        section.element.forEach { item in
+          delItems.append(IndexPath(item: item.index, section: section.index))
+        }
+      }
+    }
+    
+    diff.inserted.forEach { section in
+      if delSections.contains(section.index) || numberOfSections <= section.index {
+        insSections.append(section.index)
+      } else {
+        section.element.forEach { item in
+          insItems.append(IndexPath(item: item.index, section: section.index))
+        }
+      }
+    }
+    
+    performBatchUpdates({
+      deleteItems(at: delItems)
+      deleteSections(IndexSet(delSections))
+      insertItems(at: insItems)
+      insertSections(IndexSet(insSections))
+    }, completion: nil)
+  }
+}
