@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1419CA2124781D22004CAEF1 /* String+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1419CA2024781D22004CAEF1 /* String+Date.swift */; };
 		141EF6A1244E33A500B1CBD2 /* CountFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141EF6A0244E33A500B1CBD2 /* CountFormatter.swift */; };
 		141EF6E22453A2D100B1CBD2 /* UITableView+Diff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141EF6DD2453A2D000B1CBD2 /* UITableView+Diff.swift */; };
 		141EF6E32453A2D100B1CBD2 /* Collection+Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141EF6DE2453A2D000B1CBD2 /* Collection+Section.swift */; };
@@ -64,6 +65,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1419CA2024781D22004CAEF1 /* String+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Date.swift"; sourceTree = "<group>"; };
 		141EF6A0244E33A500B1CBD2 /* CountFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountFormatter.swift; sourceTree = "<group>"; };
 		141EF6DD2453A2D000B1CBD2 /* UITableView+Diff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Diff.swift"; sourceTree = "<group>"; };
 		141EF6DE2453A2D000B1CBD2 /* Collection+Section.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Collection+Section.swift"; sourceTree = "<group>"; };
@@ -341,6 +343,7 @@
 				1463336C23D66251009B58D0 /* NSAttributedString+Attachment.swift */,
 				14DA93D923CD3EFE009ABFD5 /* String+Regex.swift */,
 				1463336E23D66271009B58D0 /* String+Separated.swift */,
+				1419CA2024781D22004CAEF1 /* String+Date.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -464,6 +467,7 @@
 				1463336923D66211009B58D0 /* CharacterSet+Sets.swift in Sources */,
 				1463338023D662B7009B58D0 /* UIView+Shadow.swift in Sources */,
 				1463338B23D662B8009B58D0 /* UICollectionView+Register.swift in Sources */,
+				1419CA2124781D22004CAEF1 /* String+Date.swift in Sources */,
 				14DA93DC23CD4434009ABFD5 /* NibRepresentable.swift in Sources */,
 				14DA93E023CD46EA009ABFD5 /* NibReusable.swift in Sources */,
 				14DA93DE23CD452E009ABFD5 /* NibLoadable.swift in Sources */,
